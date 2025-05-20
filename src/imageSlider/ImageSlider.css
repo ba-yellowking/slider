@@ -1,0 +1,17 @@
+.slider-item {
+    width: auto;
+    height: 370px;
+    margin: 20px;
+    opacity: 0.6;
+    filter: brightness(0.6);
+    border-radius: 5px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.slider-item.main {
+    width: auto;
+    height: 520px;
+    opacity: 1;
+    transform: scale(1.1);
+    filter: brightness(1);
+}
