@@ -40,6 +40,8 @@ export class ImageSlider {
       if (index === Math.floor(this.imageCount / 2)) {
         img.classList.add("main");
       }
+      const originalIndex = (this.mainImageId - Math.floor(this.imageCount / 2) + index + this.images.length) % this.images.length;
+      img.alt = `image ${originalIndex}`;
       this.element.appendChild(img);
     });
   }
